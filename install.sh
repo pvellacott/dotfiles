@@ -28,8 +28,14 @@ sudo apt-get install spotify-client
 # Install Spotify cli Interface
 sudo pip install spotify-cli-linux
 
-#Install TMUX
+# Install TMUX
 sudo apt-get isntall tmux
+
+# Install Arc Theme
+sudo apt-get install arc-theme
+
+# Install Icon Theme
+sudo apt-get install papirus-icon-theme
 
 # NPM and yarn
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
