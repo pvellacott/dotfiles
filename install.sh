@@ -9,6 +9,9 @@ sudo apt-get install python-apt
 # Install JDK
 sudo apt-get install default-jdk
 
+# Install Neovim
+sudo apt-get install neovim
+
 # Install ZSH and Oh My ZSH
 sudo apt-get install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
