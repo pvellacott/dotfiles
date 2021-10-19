@@ -2,15 +2,14 @@
 sudo apt-get install curl
 sudo apt-get install git
 
-# Install Python
-sudo apt-get install python-dev python-pip python3-dev python3-pip
-sudo apt-get install python-apt
-
 # Install JDK
 sudo apt-get install default-jdk
 
 # Install Neovim
 sudo apt-get install neovim
+
+# LOL
+sudo apt-get install neofetch
 
 # Install ZSH and Oh My ZSH
 sudo apt-get install zsh
@@ -29,13 +28,19 @@ sudo apt-get install spotify-client
 sudo pip install spotify-cli-linux
 
 # Install TMUX
-sudo apt-get isntall tmux
+sudo apt-get install tmux
 
 # Install Arc Theme
 sudo apt-get install arc-theme
 
 # Install Icon Theme
 sudo apt-get install papirus-icon-theme
+
+# Install Window Tiling Extension
+sudo apt install node-typescript make git
+git clone https://github.com/pop-os/shell
+cd shell
+make local-install
 
 # NPM and yarn
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
@@ -50,6 +55,6 @@ npm install -g gh-pages
 rm "$HOME/.zshrc"
 ln -s "$DEV/dotfiles/.zshrc" "$HOME/.zshrc"
 
-# Setup VIM Config
-rm -rf "$HOME/.vimrc"
-ln -s "$DEV/dotfiles/vim/.vimrc" "$HOME/.vimrc"
+# Setup NVIM Config
+rm -rf "$HOME/.config/nvim"
+ln -s "$DEV/dotfiles/vim/init.vim" "$HOME/.config/nvim"

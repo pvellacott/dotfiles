@@ -21,6 +21,8 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 set spelllang=en
+set mouse=a
+set clipboard=unnamed
 setlocal spell
 
 
