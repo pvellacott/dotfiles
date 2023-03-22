@@ -23,22 +23,27 @@ set incsearch
 set spelllang=en
 set mouse=a
 set clipboard=unnamed
+set relativenumber
 setlocal spell
 
 
 call plug#begin('~/.config/nvim/plugins')
 
-Plug 'morhetz/gruvbox'
+Plug 'EdenEast/nightfox.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'leafgarland/typescript-vim'
 Plug 'mbbill/undotree'
 Plug 'scrooloose/nerdtree'
-Plug 'terryma/vim-smooth-scroll'
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
-colorscheme gruvbox
-set background=dark
+colorscheme carbonfox
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
+
 
 let g:netrw_browse_split=2
 let g:netrw_banner = 0
