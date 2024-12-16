@@ -2,9 +2,6 @@
 sudo pacman -S curl
 sudo pacman -S git
 
-# Install JDK
-sudo pacman -S jdk-openjdk
-
 # Install Neovim
 sudo pacman -S neovim
 
@@ -21,8 +18,11 @@ sudo pacman -S mpv
 # Install TMUX
 sudo pacman -S tmux
 
-# Install Icon Theme
-sudo apt-get install papirus-icon-theme
+# Install wallpaper engine from steam
+sudo pacman -S feh
+
+# Install compositor
+sudo pacman -S picom
 
 # NPM and yarn
 sudo pacman -S nodejs npm
