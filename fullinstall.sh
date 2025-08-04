@@ -96,6 +96,16 @@ setup_common_configs() {
     create_symlink "$DOTFILES_DIR/.config/ghostty" "$CONFIG_DIR/ghostty"
     create_symlink "$DOTFILES_DIR/.config/fastfetch" "$CONFIG_DIR/fastfetch"
     create_symlink "$DOTFILES_DIR/.config/vim" "$CONFIG_DIR/vim"
+    create_symlink "$DOTFILES_DIR/.config/systemd" "$CONFIG_DIR/systemd"
+    
+    # Setup systemd user services
+    print_status "Setting up systemd user services..."
+    systemctl --user daemon-reload
+    if [ -f "$CONFIG_DIR/systemd/user/ssh-agent.service" ]; then
+        systemctl --user enable ssh-agent.service
+        systemctl --user start ssh-agent.service
+        print_status "ssh-agent.service enabled and started"
+    fi
 }
 
 # Function to setup Hyprland configs
