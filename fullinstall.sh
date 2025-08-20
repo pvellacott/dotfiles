@@ -95,7 +95,7 @@ setup_common_configs() {
     # Symlink common configs
     create_symlink "$DOTFILES_DIR/.config/ghostty" "$CONFIG_DIR/ghostty"
     create_symlink "$DOTFILES_DIR/.config/fastfetch" "$CONFIG_DIR/fastfetch"
-    create_symlink "$DOTFILES_DIR/.config/vim" "$CONFIG_DIR/vim"
+    create_symlink "$DOTFILES_DIR/.config/nvim" "$CONFIG_DIR/nvim"
     create_symlink "$DOTFILES_DIR/.config/systemd" "$CONFIG_DIR/systemd"
     
     # Setup systemd user services
