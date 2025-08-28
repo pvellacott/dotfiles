@@ -55,7 +55,7 @@ install_packages() {
     
     # Core packages
     print_status "Installing core packages..."
-    sudo pacman -S --noconfirm curl git zsh neovim mpv npm
+    sudo pacman -S --noconfirm curl git zsh neovim mpv npm unzip
     
     # Terminal and fonts
     print_status "Installing terminal and fonts..."
