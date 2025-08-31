@@ -118,6 +118,7 @@ setup_hyprland_configs() {
     # Symlink Hyprland-specific configs
     create_symlink "$DOTFILES_DIR/.config/hypr" "$CONFIG_DIR/hypr"
     create_symlink "$DOTFILES_DIR/.config/waybar" "$CONFIG_DIR/waybar"
+    create_symlink "$DOTFILES_DIR/.config/wofi" "$CONFIG_DIR/wofi"
     
     # Copy wallpaper to Pictures/Wallpaper directory
     print_status "Setting up wallpaper..."
