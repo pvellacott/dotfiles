@@ -55,7 +55,7 @@ install_packages() {
     
     # Core packages
     print_status "Installing core packages..."
-    sudo pacman -S --noconfirm curl git zsh neovim mpv npm unzip
+    sudo pacman -S --noconfirm curl git zsh neovim mpv npm unzip rofi
     
     # Terminal and fonts
     print_status "Installing terminal and fonts..."
@@ -78,7 +78,7 @@ install_packages() {
 # Function to install Hyprland packages
 install_hyprland_packages() {
     print_header "Installing Hyprland packages"
-    sudo pacman -S --noconfirm hyprland hyprpaper waybar
+    sudo pacman -S --noconfirm hyprland hyprpaper waybar hyprlock
 }
 
 # Function to install i3 packages
