@@ -201,21 +201,21 @@ cpu {
 
 #pulseaudio {
     /*background-color: #f1c40f;*/
-    color: #000000;
+    color: #ffffff;
 }
 
 #pulseaudio.muted {
     /*background-color: #90b1b1;*/
-    color: #000000;
+    color: #ffffff;
 }
 
 #wireplumber {
     /*background-color: #fff0f5;*/
-    color: #000000;
+    color: #ffffff;
 }
 
 #wireplumber.muted {
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 #custom-media {
@@ -241,7 +241,7 @@ cpu {
 }
 
 #tray {
-    background-color: #2980b9;
+    /*background-color: #2980b9;*/
 }
 
 #tray > .passive {
@@ -317,7 +317,7 @@ cpu {
 
 #privacy-item {
     padding: 0 5px;
-    color: white;
+    color: #ffffff;
 }
 
 #privacy-item.screenshare {

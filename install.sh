@@ -22,7 +22,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # Install mpv video player
 sudo pacman -S mpv
 
-# Install wallpaper engine from steam
+# Wallpaper
 #sudo pacman -S feh
 sudo pacman -S hyprpaper
 
@@ -36,3 +36,7 @@ sudo pacman -S ttf-jetbrains-mono-nerd
 
 # Screenshots
 sudo pacman -S grim slurp swappy
+
+# https://github.com/uiriansan/SilentSDDM
+cd ~/Documents/Git/ && git clone -b main --depth=1 https://github.com/uiriansan/SilentSDDM && cd SilentSDDM && ./install.sh
+cp ~/Pictures/Profile/login.png /usr/share/sddm/smoo.face.icon
