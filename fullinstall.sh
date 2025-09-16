@@ -78,7 +78,7 @@ install_packages() {
 # Function to install Hyprland packages
 install_hyprland_packages() {
     print_header "Installing Hyprland packages"
-    sudo pacman -S --noconfirm hyprland hyprpaper waybar hyprlock
+    sudo pacman -S --noconfirm hyprland hyprpaper waybar hyprlock drun
 }
 
 # Function to install i3 packages
@@ -126,6 +126,16 @@ setup_hyprland_configs() {
     if [ -f "$DOTFILES_DIR/wallpaper/leaves.jpg" ]; then
         cp "$DOTFILES_DIR/wallpaper/leaves.jpg" "$HOME/Pictures/Wallpaper/"
         print_status "Wallpaper copied to: $HOME/Pictures/Wallpaper/leaves.jpg"
+    fi
+    
+    # Clone SilentSDDM theme
+    print_status "Cloning SilentSDDM theme..."
+    mkdir -p "$HOME/Documents/Programs"
+    if [ ! -d "$HOME/Documents/Programs/SilentSDDM" ]; then
+        git clone https://github.com/uiriansan/SilentSDDM.git "$HOME/Documents/Programs/SilentSDDM"
+        print_status "SilentSDDM theme cloned to: $HOME/Documents/Programs/SilentSDDM"
+    else
+        print_status "SilentSDDM theme already exists"
     fi
 }
 
