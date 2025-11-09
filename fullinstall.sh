@@ -73,6 +73,10 @@ install_packages() {
     print_status "Installing fastfetch..."
     sudo pacman -S --noconfirm fastfetch
     
+    # Language servers
+    print_status "Installing language servers..."
+    sudo pacman -S --noconfirm pyright clang typescript-language-server go lua-language-server
+    
 }
 
 # Function to install Hyprland packages

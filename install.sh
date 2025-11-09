@@ -40,3 +40,6 @@ sudo pacman -S grim slurp swappy
 # https://github.com/uiriansan/SilentSDDM
 cd ~/Documents/Git/ && git clone -b main --depth=1 https://github.com/uiriansan/SilentSDDM && cd SilentSDDM && ./install.sh
 cp ~/Pictures/Profile/login.png /usr/share/sddm/smoo.face.icon
+
+# LSPs
+sudo pacman -S pyright clang typescript-language-server go lua-language-server
