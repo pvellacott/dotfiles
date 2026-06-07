@@ -1,1 +1,0 @@
-/home/smoo/.config/omarchy/current/theme/neovim.lua
